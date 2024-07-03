@@ -1,0 +1,43 @@
+<h1 class="text-center text-primary">{{Title}}</h1>
+<img  width=200 height=200 class="img-fluid d-block mx-auto mb-3" [src]="imageLink">
+<div class="container">
+    <div class="row">
+        <div class="col-10">
+            <input class="form-control mb-4" ng-model ="newTask" placeholder="New Task">
+
+        </div>
+        <div class="col-2">
+            <button class="btn btn-primary" (click)="addTask()">Add Task</button>
+
+        </div>
+        <div class="row">
+            <div class=" col-11">
+                <table class="table table-striped table-primary">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Item</th>
+                        <th scope="col">Edit</th>
+                        <th scope="col">Remove</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td><button class="btn btn-danger">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+
+               
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
